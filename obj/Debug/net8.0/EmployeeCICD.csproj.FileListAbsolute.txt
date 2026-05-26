@@ -31,3 +31,6 @@
 /home/goutam/EmployeeCICD/obj/Debug/net8.0/EmployeeCICD.pdb
 /home/goutam/EmployeeCICD/obj/Debug/net8.0/EmployeeCICD.genruntimeconfig.cache
 /home/goutam/EmployeeCICD/obj/Debug/net8.0/ref/EmployeeCICD.dll
+/home/goutam/EmployeeCICD/bin/Debug/net8.0/__azurite_db_queue_extent__.json
+/home/goutam/EmployeeCICD/bin/Debug/net8.0/__azurite_db_queue__.json
+/home/goutam/EmployeeCICD/obj/Debug/net8.0/EmployeeCICD.sourcelink.json
