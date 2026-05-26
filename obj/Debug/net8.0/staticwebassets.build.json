@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "rPHjm4+PkzxGMtxUpl9UGmp8AHs7drdPpIz+TifG+MY=",
+  "Source": "EmployeeCICD",
+  "BasePath": "_content/EmployeeCICD",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
