@@ -4,6 +4,9 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+  buildConfiguration: 'Release'
+
 steps:
 
 - task: UseDotNet@2
@@ -12,10 +15,13 @@ steps:
     version: '8.x'
 
 - script: dotnet restore
-  displayName: Restore
+  displayName: Restore Packages
 
-- script: dotnet build
-  displayName: Build
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: Build Application
 
 - script: dotnet test
-  displayName: Test
+  displayName: Run Tests
+
+- script: dotnet publish --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)
+  displayName: Publish Application
