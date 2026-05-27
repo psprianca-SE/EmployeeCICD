@@ -1,4 +1,5 @@
 trigger:
+
 - main
 
 pool:
@@ -25,3 +26,10 @@ steps:
 
 - script: dotnet publish --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)
   displayName: Publish Application
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Azure subscription 1(d023f0ff-85a2-4e58-8b3f-816bf473e4b8)'
+    appType: 'webApp'
+    appName: 'employeecicd-app'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
