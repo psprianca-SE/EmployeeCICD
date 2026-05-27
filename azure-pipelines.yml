@@ -31,5 +31,5 @@ steps:
     azureSubscription: 'Azure subscription 1(d023f0ff-85a2-4e58-8b3f-816bf473e4b8)'
     appType: 'webApp'
     appName: 'employeecicd-app'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    package: '$(Build.ArtifactStagingDirectory)'
     deploymentMethod: 'auto'
