@@ -30,7 +30,7 @@ steps:
   displayName: Build and Push Docker Image
   inputs:
     command: buildAndPush
-    repository: psprianca-SE/employeecicd
+    repository: psprianca/employeecicd
     Dockerfile: '**/Dockerfile'
     containerRegistry: 'DockerHubConnection'
     tags: |
