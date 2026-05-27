@@ -27,11 +27,12 @@ steps:
   displayName: Publish Application
 
 - task: Docker@2
-  displayName: Build Docker Image
+  displayName: Build and Push Docker Image
   inputs:
-    command: build
+    command: buildAndPush
+    repository: psprianca-SE/employeecicd
     Dockerfile: '**/Dockerfile'
-    repository: employeecicd
+    containerRegistry: 'DockerHubConnection'
     tags: |
       latest
 
